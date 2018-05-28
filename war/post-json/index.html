@@ -1,8 +1,9 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Proje Grup 6</title>
+<title>Java Servlet JSON</title>
 <script src="./js/jquery.1.9.1.min.js"></script>
 
 <link href="./bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet" />
@@ -13,9 +14,11 @@
 </head>
 
 <body>
-	<h1 style="text-align:center"><a>Proje Grup 6</a></h1>
+	<h1 style="text-align:center"><a>NaviGlasses</a></h1>
 	
-
+	<div id="alert" class="alert alert-warning" style="width:200px;display:none">
+		<b>Warning!</b> Invalid input. 
+	</div>
 	<div class="article" style="margin:10px;text-align:center">
 		<p>
 			<button class="btn btn-primary" type="button" onclick="getAjax()">Refresh</button>
@@ -23,9 +26,12 @@
 	</div>
 	
 	<div style="width:700px;padding:20px">
+		<h5 style="text-align:center"><i style="color:#ccc"><small>Visitors</small></i></h5>
 		<table id="added-articles" class="table" >
 			<tr>
-				<th>Location</th>
+				<th>Name</th>
+				<th>Country</th>
+				<th>Twitter</th>
 			</tr>
 		</table>
 	</div>
