@@ -4,7 +4,6 @@ function sendAjax() {
 		$("#alert").css("display","block");
 		return;
 	}
-	// get inputs
 	var person = new Object();
 	person.location = $('#location').val();
 
@@ -36,7 +35,7 @@ function sendAjax() {
 		}
 	});
 }
-//--------------------------------------
+
 function getAjax() {
 	 
 	$("#alert").css("display","none");
@@ -68,5 +67,3 @@ function getAjax() {
 		}
 	});
 }
-
-//--------------------------------------
